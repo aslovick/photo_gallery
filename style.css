@@ -1,16 +1,15 @@
-body {
-    display: block;
-    margin: 8px;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    display: block;
+    margin: 8px;
+    background-color: #2F3473;
+}
 
 .nav-bar {
-    background-color: #C6DEEA;
     padding: 10px 20px;
     margin-bottom: 15px;
 }
@@ -18,13 +17,14 @@ body {
 .title {
     font-family: 'Roboto Mono';
     font-size: 220%;
+    color: #C6DEEA;
 }
 
 .image-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     justify-content: center;
 }
@@ -32,10 +32,17 @@ body {
 img {
     width: 30%;
     height: 175px;
-    margin: 7px;
+    margin: 5px;
     object-fit: cover;
 }
 
-h1 {
-  color: black;
+@media screen and (max-width: 900px){
+  body {
+  background-color: #FFF9A0;
+  }
+}
+@media screen and (max-width: 600px){
+  body {
+  background-color: #2F3473;
+  }
 }
